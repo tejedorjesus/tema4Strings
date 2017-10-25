@@ -17,17 +17,26 @@ public class string5 {
 
 		for(k=0;k<frase.length();k+=2){
 
-
-			System.out.print( "las impares son");
 				System.out.print( frase.charAt(k));
-
+				
+		}System.out.println();
+		for(k=1;k<frase.length();k+=2){
+			
+			System.out.print( frase.charAt(k));
+		}
+	
+			
+		
+		
+		
+		
 			}
 		}
 		
 
 
 
-	}
+	
 
 
 

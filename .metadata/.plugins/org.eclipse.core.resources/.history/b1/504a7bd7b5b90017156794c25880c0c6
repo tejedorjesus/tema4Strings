@@ -1,7 +1,5 @@
 package string6;
-
 import java.util.Scanner;
-
 public class main {
 
 	public static void main(String[] args) {
@@ -15,19 +13,13 @@ public class main {
 		cantidad=0;
 		System.out.println("Escriba una frase");
 		frase=teclado.nextLine();
-		int k;
-		
-		for(k=0; k< frase.length(); k++){
+		int k = 0;
+		for(k=0; k<= frase.length(); k+=1){
+			
 		if(frase.charAt(k)== 'a'||frase.charAt(k)== 'e'||frase.charAt(k)== 'i'||frase.charAt(k)== 'o'||frase.charAt(k)== 'u'){
 			cantidad ++;
-			 }// end if
-		}// end for
-		System.out.print( "cantidad vocales"  + cantidad);
-		
-		for(k=0; k< frase.length(); k++){
-			if(frase.charAt(k)== 'a'||frase.charAt(k)== 'e'||frase.charAt(k)== 'i'||frase.charAt(k)== 'o'||frase.charAt(k)== 'u'){
-				cantidad ++;
-			}//end if
-		}//end for
+			 }
+		}
+		System.out.print( cantidad );
 }
 }
