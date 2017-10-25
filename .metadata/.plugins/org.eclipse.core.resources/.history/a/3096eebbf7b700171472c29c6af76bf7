@@ -1,0 +1,26 @@
+
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		Scanner teclado = new Scanner(System.in);
+
+		String palabra;
+		int contador=0;
+		String end="";
+
+		System.out.println("Escribe una palabra:");
+		palabra=teclado.nextLine();
+		int longitud = palabra.length();
+		while (contador<longitud){
+			char resultado = palabra.charAt(contador);
+			contador++;
+			end=end+resultado;
+			System.out.println(end);
+		}
+		teclado.close();
+	}
+}
