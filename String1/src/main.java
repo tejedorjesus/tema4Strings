@@ -19,8 +19,11 @@ public class main {
 			System.out.println("Escribe una frase de menos de 80 caracteres:");
 			s1=teclado.nextLine();
 		}
-		for (i=0 ; i<s1.length(); i++){
+		for(i=0;i<s1.length();i++){
 			System.out.println(s1.substring(0,i+1));
+			
 		}
+	
+		
 	}
 }

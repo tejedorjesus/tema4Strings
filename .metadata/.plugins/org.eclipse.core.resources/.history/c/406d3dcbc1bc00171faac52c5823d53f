@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class string9 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//*Escribir un programa que lea códigos de personas de 8 caracteres de modo que los cuatro
+		//primeros sean numéricos y contenidos entre 1990-1995 (un año), el quinto carácter sea solo
+		//(H ó M) sexo, el sexto un numero que representa el curso 1 ó 2 y los caracteres séptimo y
+		//octavo pueden tener cualquier valor.Ddeben rechazarse los códigos que no cumplan estas condiciones, 
+		//la finalización de entrada de códigos se produce cuando se introduce el código
+		//“00000000”. Al final el programa debe sacar un informe indicando cuántos hombres y
+		//mujeres hay matriculados en primero y segundo y cuántos códigos correctos han sido
+		//leídos.*//
+		
+		String s1;
+		int i;
+
+		Scanner teclado = new Scanner(System.in);
+		System.out.println( "teclee una frase");
+		s1=teclado.nextLine();
+		
+		while (s1.length() > 8){
+			
+			System.out.println( "teclee una frase menor de 8 caracteres");
+			s1=teclado.nextLine();
+		}//end while
+		
+		
+		
+		
+		
+		if(s1.charAt(0) && s1.charAt(3)){
+		}//end if
+		
+			while(s1.charAt(i)>=48 && s1.charAt(i)<=57){
+				System.out.println( "los cuatro primeros digitos deben ser numeros");
+				s1=teclado.nextLine();
+			}//end while
+
+
+
+
+	}// end main
+}//end class

@@ -9,18 +9,20 @@ public class string3 {
 
 		String frase;
 		String palabra;
+		int posicion=0;
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("escriba una frase");
 		frase=teclado.nextLine();
 		System.out.println("escriba una palabra de la frase");
 		palabra=teclado.nextLine();
-
-		if (frase.contains(palabra)){
-			frase.indexOf(palabra);
-			System.out.println("la palabra ocupa la posicion" + frase.substring(0));
+		
+		posicion=frase.indexOf(palabra);
+		if (posicion !=0){
+			System.out.println("la palabra ocupa la posicion " + posicion);
+		}else{
+			System.out.println("la palabra ocupa la posicion " + " 0 ");
 		}
 	}
-
 
 
 
