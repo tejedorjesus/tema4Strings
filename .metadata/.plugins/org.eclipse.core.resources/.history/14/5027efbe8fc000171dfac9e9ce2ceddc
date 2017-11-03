@@ -1,0 +1,60 @@
+
+package prueba;
+
+import java.util.Scanner;
+public class prueba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+		int n;
+
+		int k;
+		int contaimpar;
+		int contapar;
+		int sumapar=0;
+		int sumaimpar=0;
+		contaimpar=0;
+		contapar=0;
+
+		System.out.println("introduzca el un numero");
+		n=sc.nextInt();
+
+		while(n!=0){
+			
+
+
+
+
+
+
+			if(n%2==0){
+				sumapar = sumapar +n;
+				
+
+
+
+			}//end if
+			if(n%2 != 0){
+				sumaimpar=sumaimpar+n;
+				
+
+			}//end if
+
+		
+		System.out.println("introduzca otro numero hasta 0");
+		n=sc.nextInt();
+
+	}//end while
+
+
+	System.out.println("sumaimpar " + sumaimpar + "sumapar" + sumapar);
+
+
+
+
+
+}
+
+}

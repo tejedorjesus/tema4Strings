@@ -1,0 +1,44 @@
+
+package prueba;
+
+import java.util.Scanner;
+public class prueba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int a;
+		int b;
+		int suma;
+		int k;
+		 
+		System.out.println("introduzca el primer numero");
+		a=sc.nextInt();
+		System.out.println("introduzca el segundo numero");
+		b=sc.nextInt();
+		
+		while(a>=b){
+			System.out.println("el primer numero debe ser menor que el segundo");
+			System.out.println("introduzca el primer numero");
+			a=sc.nextInt();
+			System.out.println("introduzca el segundo numero");
+			b=sc.nextInt();
+			
+			
+		}//end while
+		suma=0;
+		for (k=a; k<=b; k++){
+			if(k%2 !=0){
+			suma=suma+k;
+			}//end if
+			
+		}//end for
+		
+		System.out.println("la suma de los numeros comprendidos entre a y b, que son" + k + " es " + suma);
+		
+		
+
+	}
+
+}

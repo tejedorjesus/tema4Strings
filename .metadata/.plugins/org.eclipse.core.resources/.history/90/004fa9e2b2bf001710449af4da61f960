@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class ejercicio3vectores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int i;
+		final int n = 20;
+		int Array1[];
+		int maximo=0;
+		int minimo=0;
+		
+		Array1=new int [20];
+		 Scanner sc = new Scanner(System.in);
+		 
+		System.out.println("introduce 20 numeros");
+		 for(i=0; i<n; i++){
+		System.out.println("numero");
+			Array1[i] =sc.nextInt();
+			if(n>maximo){
+				maximo=n;
+			}
+			if(n<minimo){
+				minimo=n;
+			}
+		 }
+		 System.out.println( maximo + minimo );
+	}
+
+}

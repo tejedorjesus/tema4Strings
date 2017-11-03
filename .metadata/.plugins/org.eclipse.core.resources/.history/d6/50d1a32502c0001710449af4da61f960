@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class ejercicio4vectores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+		final int f = 5;
+		final int c = 5;
+		int Array1 [][];
+		Array1 = new int[f][c];
+		int i,j, max=0, min=0, filaMin=0, filaMax=0,colMin=0, colMax=0; 
+				 
+		System.out.println("introduzca los numeros correpondientes a las filas");
+		for(i=0; i<f; i++){
+			for(j=0; i<c; j++){
+			System.out.println("otro numero");
+			Array1[i][j] =sc.nextInt();
+			if(Array1[i][j]<min){
+				min= Array1[i][j];
+			}
+			if(Array1[i][j]>max){
+				max=Array1[i][j];
+			}
+			}
+		}
+		
+		System.out.println(" maximo es "+ max + "minimo es " + min);
+		
+
+
+
+	}
+
+}

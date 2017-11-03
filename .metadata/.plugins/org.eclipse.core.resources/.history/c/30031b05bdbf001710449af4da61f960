@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class ejercicio4vectores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		int [][] valores= new int [5][5];
+		int maximo= valores[0][0];
+		int minimo= valores[0][0];
+		 Scanner sc = new Scanner(System.in);
+		 
+		 System.out.println("introduce 5 numeros");
+		 for(int i=1; i<5; i++){
+			 System.out.println("numero");
+				valores[i][i] =sc.nextInt();
+				if(valores[i][i]>maximo){
+					 maximo=valores[i][i];
+		 }
+		 }
+		 System.out.println("introduce 5 numeros");
+		 for(int i=1; i<5; i++){
+			 System.out.println("numero");
+				valores[i][i] =sc.nextInt();
+				if(valores[i][i]>maximo){
+					 maximo=valores[i][i];
+				}
+		 }
+		 System.out.println( "el maximo es" + maximo + " y el minimo es " + minimo  );
+	}
+
+}

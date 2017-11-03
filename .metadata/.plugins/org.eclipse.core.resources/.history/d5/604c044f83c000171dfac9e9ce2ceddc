@@ -1,0 +1,39 @@
+
+package prueba;
+
+import java.util.Scanner;
+public class prueba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int n;
+		int suma;
+		int k;
+		 
+		System.out.println("introduzca el un numero");
+		n=sc.nextInt();
+		
+		while(n<=0){
+			
+			System.out.println("introduzca un numero mayor que 0");
+			n=sc.nextInt();
+		
+			
+		}//end while
+		suma=0;
+		for (k=1; k<n; k++){
+			if(k%2==0){
+			suma=suma+(k*k);
+			}//end if
+			
+		}//end for
+		
+		System.out.println("la suma de los cuadradados de los pares comprendidos entre n y 1 es " + suma);
+		
+		
+
+	}
+
+}

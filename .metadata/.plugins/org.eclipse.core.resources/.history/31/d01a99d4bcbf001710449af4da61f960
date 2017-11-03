@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class ejercicio4vectores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		int [][] valores= new int [5][5];
+		 Scanner sc = new Scanner(System.in);
+		 
+		 System.out.println("introduce 10 numeros");
+		 for(int i=1; i<5; i++){
+			 System.out.println("numero");
+				valores[i][i] =sc.nextInt();
+		 }
+		 System.out.println("introduce 10 numeros");
+		 for(int i=1; i<5; i++){
+			 System.out.println("numero");
+				valores[i][i] =sc.nextInt();
+		 }
+	}
+
+}

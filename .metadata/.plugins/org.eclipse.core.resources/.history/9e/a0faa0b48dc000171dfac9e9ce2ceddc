@@ -1,0 +1,48 @@
+
+package prueba;
+
+import java.util.Scanner;
+public class prueba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+		int n;
+
+		int k;
+		int conta;
+		int suma;
+
+		System.out.println("introduzca el un numero");
+		n=sc.nextInt();
+
+		while(n!=0){
+
+			System.out.println("introduzca otro numero hasta 0");
+			n=sc.nextInt();
+
+			conta=0;
+			for (k=1; k<=n; k++){
+				conta = conta++;
+				suma=0;
+				if(n%5==0){
+					suma = suma +n;
+
+				}//end if
+				System.out.println("suma " + suma + "numeros intro" + conta);
+			}// end for
+
+
+		}//end while
+
+
+
+
+
+
+
+
+	}
+
+}
