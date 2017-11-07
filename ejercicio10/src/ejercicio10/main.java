@@ -24,7 +24,7 @@ public class main {
 		while(n < 0){
 			System.out.println("introduzca un numero");
 			n =teclado.nextInt();
-		}
+		}//end while
 		
 		pp = n; 
 		encontrado = false;
@@ -33,15 +33,15 @@ public class main {
 			for(div=2; div<pp-1; div++){
 				if(pp % div ==0){
 					contadiv = contadiv +1;
-				}
+				}//end if
 			
-			}
+			}//end for
 			if(contadiv == 0){
 				encontrado = true;
 				System.out.println("el numero " + pp + " es el mas cercano a " + n + " por debajo");
-			}
+			}//end if
 		
-		}
+		}//end while
 		
 		
 		

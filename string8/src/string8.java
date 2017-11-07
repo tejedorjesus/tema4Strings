@@ -55,6 +55,7 @@ public class string8 {
 		System.out.println( frase2);
 		
 		System.out.println("introduzca el mensaje cifrado para desencriptarlo");
+		System.out.println("");
 		frase3=teclado.nextLine();
 		
 		for(i=0; i <frase3.length(); i++){

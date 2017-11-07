@@ -1,0 +1,24 @@
+
+package prueba;
+
+import java.util.Scanner;
+public class prueba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+
+		//ejercicio 7 programa que de una frase nos diga mayusculas minusculas y numeros que tiene*/
+
+
+		String s1;
+		String s2;
+		
+		s1=teclado.nextLine();
+		s2=teclado.nextLine();
+		System.out.println(s1.equals(s2));
+
+	
+	
+		}
+}

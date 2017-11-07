@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
-
+		//1. Leer una frase de máximo 80 caracteres y escribirla progresivamente es decir si la frase es:
+		//“ciervo”, el programa debe imprimir//
 		Scanner teclado = new Scanner(System.in);
 
 		String s1;

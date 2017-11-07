@@ -37,9 +37,8 @@ public class main {
 			if(frase.charAt(k) >65 && frase.charAt(k)< 90){
 					cantidadconsonantes ++;
 			}// end if
-			}// end for
-		for(k=0; k< frase.length(); k++){
-					if(frase.charAt(k) >97 && frase.charAt(k)< 122){
+	
+					else if(frase.charAt(k) >97 && frase.charAt(k)< 122){
 						cantidadconsonantes ++;
 					
 			}//end if
