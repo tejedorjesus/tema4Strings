@@ -1,0 +1,70 @@
+
+package prueba;
+
+import java.util.Scanner;
+public class prueba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+
+
+		//ejercicio 7 programa que de una frase nos diga mayusculas minusculas y numeros que tiene*/
+
+		
+		
+
+		int canta=0;
+		int cante=0;
+		int canti=0;
+		int canto=0;
+		int cantu=0;
+		
+		
+		
+		int k;
+
+		String frase;
+
+
+
+		System.out.println( "teclee una frase");
+		frase=teclado.nextLine();
+		for(k=0; k< frase.length(); k++){
+			if(frase.charAt(k)== 'a'){
+				canta ++;
+			}
+			 if(frase.charAt(k)== 'e'){
+					cante ++;
+			 }
+					 if(frase.charAt(k)== 'i'){
+						canti ++;
+					 }
+						 if(frase.charAt(k)== 'o'){
+							canto ++;
+						 }
+							if(frase.charAt(k)== 'u'){
+								cantu ++;
+						}//end if 
+					}//end for
+		
+
+		
+			
+		
+	
+		
+		
+	
+
+		System.out.println( "la frase tiene " + canta + " a's " + cante + " e's " + " y " + canti + " i`s"+ canto + " o's " + " y " + cantu + " u`s");
+
+
+						}
+						}
+		
+
+
+
+	
+		

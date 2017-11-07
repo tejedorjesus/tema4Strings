@@ -15,7 +15,9 @@ public class main {
 		String frase;
 		int cantidad;
 		cantidad=0;
-		int cantidadconsonantes =0;
+		int cantidadletras =0;
+		int cantidadconsonantes=0;
+		
 		System.out.println("Escriba una frase");
 		frase=teclado.nextLine();
 		int k;
@@ -34,19 +36,22 @@ public class main {
 		}//end for
 
 		for(k=0; k< frase.length(); k++){
-			if(frase.charAt(k) >65 && frase.charAt(k)< 90){
-					cantidadconsonantes ++;
+			if(frase.charAt(k) >=97 && frase.charAt(k)<= 122){
+					cantidadletras ++;
 			}// end if
+
 	
-					else if(frase.charAt(k) >97 && frase.charAt(k)< 122){
-						cantidadconsonantes ++;
 					
 			}//end if
-		}//*end for
+
+
+			
+		
+
 
 
 		System.out.println( "cantidad vocales"  + cantidad);
-		System.out.println( "cantidad consonantes"  + cantidadconsonantes);
+		System.out.println( "cantidad consonantes"  + (cantidadletras-cantidad));
 
 
 
