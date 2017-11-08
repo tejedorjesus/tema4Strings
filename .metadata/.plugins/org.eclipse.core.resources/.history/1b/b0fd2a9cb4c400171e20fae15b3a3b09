@@ -16,7 +16,7 @@ public class prueba2 {
 		int i;
 		int j;
 		int max=0;
-		int min=
+		int min=0;
 
 		for(i=0;i<f;i++){
 
