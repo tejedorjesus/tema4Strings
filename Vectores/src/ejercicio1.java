@@ -3,7 +3,8 @@ public class ejercicio1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		//se generan 20 numeros de tipo entre 10 y -10 almacenados en un vector.
+		//calcula y muestra la media y cuantoss numeros hay
 		final int n = 20;
 		int Array1 [];
 		Array1 = new int[n];

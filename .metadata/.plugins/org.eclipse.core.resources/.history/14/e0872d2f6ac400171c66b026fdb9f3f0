@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class prueba {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		//se generan 20 numeros de tipo entre 10 y -10 almacenados en un vector.
+		//calcula y muestra la media y cuantoss numeros hay
+		int Array1[];
+		Array1=new int[20];
+		
+		double media;
+		media =0;
+		int i;
+		int max=0;
+		int min=0;
+		int conta=0;
+		System.out.println("Se van a generar 20 numeros");
+		for (i=0; i<Array1.length; i++){
+		Array1[i]=(int)Math.floor(Math.random()*21-10);
+		conta= conta + Array1[i];
+		
+		System.out.print((int)Array1[i]);
+		System.out.print("  ");
+		if(Array1[i]>max){
+			max=Array1[i];
+			}
+		if(Array1[i]<min){
+			min=Array1[i];
+			}
+
+		
+		
+		
+		
+		}
+		System.out.println();
+		System.out.print(" maximo " + max + " minimo " + min);
+		
+		
+}
+}

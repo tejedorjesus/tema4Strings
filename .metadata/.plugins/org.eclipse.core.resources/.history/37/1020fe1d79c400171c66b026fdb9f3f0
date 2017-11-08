@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class prueba {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// leer un vector de 20 enteros encontrar el mayor y el menor de ellos y encontrar dondese encuentran
+		
+		int Array1[];
+		Array1=new int[20];
+		int i;
+		int max=0;
+		int min=0;
+		
+		
+		System.out.println("Introduzca 10 numeros");
+		for (i=0; i<20; i++){
+			Array1[i] = (int)Math.floor(Math.random()*20);
+			System.out.print(Array1[i]);
+			System.out.print(" ");
+		}
+		System.out.println();
+		System.out.print("el maximo");
+		System.out.print(" ");
+		
+		for (i=0; i<20; i++){
+			if(Array1[i]>max){
+				max=Array1[i];
+				
+			
+			}else if(Array1[i]<min){
+				min=Array1[i];
+				
+			}
+		}
+		System.out.print(max);
+		System.out.print(" ");
+		System.out.println();
+		System.out.print("el minimo");
+		System.out.print(" ");
+		
+		
+		
+			System.out.print(min);
+}
+}
