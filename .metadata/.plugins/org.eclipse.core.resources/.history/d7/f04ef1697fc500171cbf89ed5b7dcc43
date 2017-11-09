@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Ejercicio38 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//34.-Hacer un programa que lea las calificaciones de un alumno en 10 asignaturas, las
+		//almacene en un vector y calcule e imprima su media.
+		
+		final int curso = 10;
+		final int alum = 30;
+		int Array1 [][];
+		int i;
+		int j;
+		int conta=0;  
