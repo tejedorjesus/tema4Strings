@@ -21,7 +21,7 @@ public class ejercicio3vectores {
 	
 		
 		System.out.println("introduce 20 numeros");
-		for(int i=0; i<20; i++){
+		for(int i=0; i<4; i++){
 			valores[i]=(int)Math.floor(Math.random()*21-10);
 			System.out.println(valores[i]);
 			

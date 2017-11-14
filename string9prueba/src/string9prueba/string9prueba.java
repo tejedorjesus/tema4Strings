@@ -1,66 +1,44 @@
 
 
-
 package string9prueba;
 import java.util.Scanner;
 public class string9prueba {
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
+	//se generan 20 numeros de tipo entre 10 y -10 almacenados en un vector.
+			//calcula y muestra la media y cuantoss numeros hay
 		
-		int año=0;
-		int sexo =0;
-		int codigo1=0;
-		int codigo2=0;
-		int curso=0;
 		
-		Scanner teclado = new Scanner(System.in);
-		System.out.println("introduzca un año");
-		año = teclado.nextInt();	
 		
-		while(año < 1990 || año > 1995 ){
+		int Array1[];
+		Array1 = new int [4];
+		int Array2[];
+		Array2 = new int [4];
+		int i=0;
+		int Array3[];
+		Array3 = new int [4];
+		
+	
+	
+		
+		for (i=0; i < 4; i++){
+			Array1[i]=(int)Math.floor(Math.random()*21-10);
 			
-			
-			System.out.println("introduzca un año valido");
-			año = teclado.nextInt();
-		
-		
-		}//end while
-		
-		System.out.println("introduzca su sexo H pulse(1)o Mujer pulse(2) ");
-		
-		sexo = teclado.nextInt();
-		
-		while(sexo < 1 || sexo >2 ){	
-			System.out.println("introduzca (1) o (2)");
-			sexo = teclado.nextInt();
-					
-		
-		}// end while
-		System.out.println("introduzca su curso  pulse(1) o pulse(2) ");
-		
-		curso = teclado.nextInt();
-		
-		while(curso < 1 || curso >2 ){	
-			System.out.println("introduzca (1) o (2)");
-			curso = teclado.nextInt();
-		
-		
-		}// end while
-		System.out.println("introduzca un codigo de 1 digito del 1 al 9");
-		codigo1 = teclado.nextInt();
-		while(codigo1 < 0 || codigo1 > 9 ){
-			System.out.println("introduzca un codigo correcto");
-			codigo1 = teclado.nextInt();
-			
+			System.out.printf("%5d",Array1[i]);
 		}
-		System.out.println("introduzca un codigo de 1 digito del 1 al 9");
-		codigo2 = teclado.nextInt();
-		while(codigo2 < 0 || codigo2 > 9 ){
-			System.out.println("introduzca un codigo correcto");
-			codigo2 = teclado.nextInt();
-		}//end while
-		System.out.println("la informacion almacenada es " + año + sexo + curso + codigo1 + codigo2);
-	}//end class
-	
-	
-}//end main
+		System.out.println();
+		for (i=0; i < 4; i++){
+			Array2[i]=(int)Math.floor(Math.random()*21-10);
+			
+			System.out.printf("%5d",Array2[i]);
+		}
+		System.out.println();
+		
+		for (i=0; i < 4; i++){
+		Array3[i] =Array2[i]+ Array1[i];
+		
+		System.out.print( Array3[i]);
+		}
+}
+}

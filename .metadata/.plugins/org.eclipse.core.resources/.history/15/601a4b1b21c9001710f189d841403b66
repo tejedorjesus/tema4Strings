@@ -1,0 +1,52 @@
+
+
+
+package string9prueba;
+import java.util.Scanner;
+public class string9prueba {
+	public static void main(String[] args) {
+
+		
+	
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		
+		String  s1;
+		int i=0;
+		int contamayus;
+		int contaminus;
+		int respuesta;
+		int contanum;
+		respuesta = 0;
+		
+		System.out.println("introduzca una palbra");
+		s1 = teclado.nextLine();	
+		while(s1.length()>80){
+			System.out.println("Introduxca un aplabra menor de 80 palabras");
+			s1 = teclado.nextLine();
+		}
+		contamayus=0;
+		contaminus=0;
+		contanum=0;
+		for(i=0;i<s1.length();i++){
+			if(s1.charAt(i)>64 && s1.charAt(i)<91){
+				contamayus++;
+			}
+			 if(s1.charAt(i)>96 && s1.charAt(i)<123){
+				contaminus++;
+			 }
+		
+		 if(s1.charAt(i)>47 && s1.charAt(i)<58){
+			contanum++;
+			
+		 }
+		}
+			
+			System.out.print(" la frase tiene " + contaminus + " minusculas " + contamayus + " mayusculas y " + contanum + " numeros");
+			
+
+		
+	}
+		
+	}

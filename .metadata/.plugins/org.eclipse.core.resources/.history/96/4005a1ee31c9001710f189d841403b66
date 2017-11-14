@@ -1,0 +1,46 @@
+
+
+package string9prueba;
+import java.util.Scanner;
+public class string9prueba {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	//se generan 20 numeros de tipo entre 10 y -10 almacenados en un vector.
+			//calcula y muestra la media y cuantoss numeros hay
+		
+		
+		
+		int Array1[];
+		Array1 = new int [4];
+		int i=0;
+	    int suma=0;
+	    int max;
+	    int min;
+		
+		for (i=0;i<4;i++){
+			Array1[i]=(int)Math.floor(Math.random()*21-10);
+			System.out.println(Array1[i]);
+		}
+		
+		for(i=0;i<4;i++){
+			suma += Array1[i];
+		}
+		max=0;
+		for(i=0;i<4;i++){
+			if( max<Array1[i]){
+				max=Array1[i];
+			}
+		}
+		min=0;
+			for(i=0;i<4;i++){
+				if( min>Array1[i]){
+					min=Array1[i];
+		}
+			}
+		
+		System.out.println(  "tenemos "+ i + " numeros y la media es " + suma/4 + " el mayor es " + max + " y el menor es " + min );
+	
+	
+}
+}

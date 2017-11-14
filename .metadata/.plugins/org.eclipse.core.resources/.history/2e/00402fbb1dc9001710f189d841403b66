@@ -1,0 +1,39 @@
+
+
+
+package string9prueba;
+import java.util.Scanner;
+public class string9prueba {
+	public static void main(String[] args) {
+
+		
+	
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		
+		String  s1;
+		int i=0;
+		int contamayus;
+		int contaminus;
+		int respuesta;
+		respuesta = 0;
+		
+		System.out.println("introduzca una palbra");
+		s1 = teclado.nextLine();	
+		while(s1.length()>80){
+			System.out.println("Introduxca un aplabra menor de 80 palabras");
+			s1 = teclado.nextLine();
+		}
+		
+		for(i=0;i<s1.length();i=i+2){
+			System.out.print( s1.charAt(i));
+			
+		}
+		System.out.println();
+		for(i=0;i<s1.length();i=i+2){
+			System.out.print( s1.charAt(i)-1);
+		}
+	}
+		
+	}

@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Ejercicio7vectores {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//7. Generar una matriz de 5x5 numérica entera entre -10 y 10, a continuación pedir dos números
+		//de fila, que se deben filtrar entre 1 y 5 e intercambiar ambas filas. Presentar las matrices antes
+		//y después del cambio.
+		
+		
+		Scanner sc = new Scanner(System.in);
+		int Array1[][];
+		Array1 = new int [5][5];
+		int i=0,j=0; 
+		int n=0;
+		int z=0;
+		
+		
+		for(i=0; i<5; i++){
+			for(j=0; j<5; j++){
+				Array1[i][j]=(int)Math.floor(Math.random()*21-10);
+				System.out.printf("%3d", Array1[i][j]);
+			}
+			System.out.println();
+			
+			}
+		
+		System.out.println(" introduzca un numero entre el 1 y el 5 para cambiar las filas");
+		n=sc.nextInt();
+		System.out.println(" introduzca un numero entre el 1 y el 5 para cambiar las filas");
+		z=sc.nextInt();
+		
+		for(i=0; i<5; i++){
+			for(j=0; j<5; j++){
+				if(n==i){
+					System.out.printf("%3d", Array1[n][j]);
+				}
+				
+			}
+				
+				
+				
+				
+			}
+	}
+			
+}
