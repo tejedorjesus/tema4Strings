@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Ejercicio38 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		//38.-Cargar en una matriz las notas de los alumnos de un colegio en función del número de
+		//cursos (filas) y del número de alumnos por curso (columnas).	
+		
+		
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		int i=0; 
+		int j=0;
+		int Array1 [][];
+		Array1 = new int[i][j];
+		
+		System.out.println("introduzca cursos");
+		i=teclado.nextInt();
+		System.out.println("introduzca alumnos");
+		j=teclado.nextInt();
+	
+		
+		for(i=0; i<j; i++){
+			for(j=0; j<i; j++){
+				Array1[i][j]=(int)Math.floor(Math.random()*11);
+				
+				System.out.printf("%3d",Array1[i][j]);
+				
+				
+			}
+			System.out.println();
+		}
+		
+
+	}
+
+}

@@ -8,9 +8,7 @@ public class prueba {
 		// TODO Auto-generated method stub
 		Scanner teclado = new Scanner(System.in);
 
-
 		//ejercicio 7 programa que de una frase nos diga mayusculas minusculas y numeros que tiene*/
-
 
 		String letras ="TRWAGMYFPDXBNJZSQVHLCKE";
 		String letrasnie ="XYZ";
@@ -79,13 +77,9 @@ public class prueba {
 				else{
 					System.out.println("NIE incorrecto");
 
-				
 				}//end if
 				}//end else
-			
-			
-			
-				
+		
 		if(letrasnie.charAt(1)==letranie1.charAt(0)){
 			aux = letranie1.replace("Y", "1");
 			System.out.println(" la letra de control de tu nie es la Y y tu numero es " + aux );
@@ -100,8 +94,6 @@ public class prueba {
 
 			}else{
 				System.out.println("NIE incorrecto");
-
-			
 			}
 			}
 		
