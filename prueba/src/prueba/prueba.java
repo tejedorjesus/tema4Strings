@@ -12,101 +12,120 @@ public class prueba {
 		//ejercicio 7 programa que de una frase nos diga mayusculas minusculas y numeros que tiene*/
 
 
+		String letras ="TRWAGMYFPDXBNJZSQVHLCKE";
+		String letrasnie ="XYZ";
+		int dni=0;
+		int i=0;
+		String letra;
+		int n=0;
+		String nie;
+		int opcion=0;
+		int K=0;
+		String aux;	int k=0;
+		String letranie2;
+		String letranie1;
 
+		System.out.println( " dni pulse '1' nie pulse '2'");
+		opcion=teclado.nextInt();
 
-		int canta=0;
-		int cante=0;
-		int canti=0;
-		int canto=0;
-		int cantu=0;
-		int max=0;
-
-
-
-		int k;
-
-		String frase;
-
-
-
-		System.out.println( "teclee una frase");
-		frase=teclado.nextLine();
-		for(k=0; k< frase.length(); k++){
-			if(frase.charAt(k)== 'a'){
-				canta ++;
-				if (canta>max){
-					max=canta;
-				}//if
-			}//if
-
-
-			if(frase.charAt(k)== 'e'){
-				cante ++;
-				if (cante>max){
-					max=cante;
-				}//if
-			}//if
-
-
-			if(frase.charAt(k)== 'i'){
-				canti ++;
-				if (canti>max){
-					max=canti;
-				}//if
-			}//if
-
-			if(frase.charAt(k)== 'o'){
-				canto ++;
-				if (canto>max){
-					max=canto;
-				}//if
-			}//if
-
-			if(frase.charAt(k)== 'u'){
-				cantu ++;
-				if (cantu>max){
-					max=cantu;
-				}//if
-			}//if
-
-		}//end for
-
-		if (max==canta){
+		if (opcion ==1){
+			System.out.println( "Introduce el dni sin letra");
+			dni=teclado.nextInt();
+			while(dni<0 || dni>99999999){
+				System.out.println( "Introduce el dni sin letra 'recuerde que debe ser un numero entre el 0 'Don Juan Carlos' y el 99999999");
+			dni=teclado.nextInt();
 			
-		System.out.println( "la letra que mas se repite es la A "+ max +  "  veces " );
-	}
+			}
+			teclado.nextLine();
+			i=dni%23;
+			System.out.println("Su letra de control es " + letras.charAt(i));
 
-		if (max==cante){
-			
-			System.out.println( "la letra que mas se repite es la E "+ max +  "  veces " );
+			System.out.println( "Introduce la letra");
+
+
+			letra =teclado.nextLine();
+			letra=letra.toUpperCase();
+			System.out.println( letra);
+
+			if(letras.charAt(i)==letra.charAt(0)){
+				System.out.println("DNI correcto");
+
+			}else{
+				System.out.println("DNI incorrecto");
+
+			}
 		}
 
-		if (max==canti){
+		if (opcion==2){
+
+			System.out.println( "Introduce tu nie sin la ultima letra");
+			teclado.nextLine();
+			letranie1=teclado.nextLine();
+			letranie1=letranie1.toUpperCase();
 			
-		System.out.println( "la letra que mas se repite es la I "+ max +  "  veces " );
-	}
+			if(letrasnie.charAt(0)==letranie1.charAt(0)){
+				aux = letranie1.replace("X", "0");
+				System.out.println(" la letra de control de tu nie es la X y tu numero es " + aux );
+				System.out.println( " ahora dime te tu letra final");
+				
+				letranie2 =teclado.nextLine();
+				letranie2=letranie2.toUpperCase();
+				System.out.println( letranie2);
+				k=Integer.parseInt(aux)%23;
+				if(letras.charAt(k)==letranie2.charAt(0)){
+					System.out.println("NIE correcto");
 
+				}//end if
+				else{
+					System.out.println("NIE incorrecto");
 
-
-		if (max==canto){
+				
+				}//end if
+				}//end else
 			
-		System.out.println( "la letra que mas se repite es la O "+ max +  "  veces " );
-	}
-
-
-		if (max==cantu){
 			
-		System.out.println( "la letra que mas se repite es la U "+ max +  "  veces " );
-	}
+			
+				
+		if(letrasnie.charAt(1)==letranie1.charAt(0)){
+			aux = letranie1.replace("Y", "1");
+			System.out.println(" la letra de control de tu nie es la Y y tu numero es " + aux );
+			System.out.println( " ahora dime te tu letra final");
+			
+			letranie2 =teclado.nextLine();
+			letranie2=letranie2.toUpperCase();
+			System.out.println( letranie2);
+			k=Integer.parseInt(aux)%23;
+			if(letras.charAt(k)==letranie2.charAt(0)){
+				System.out.println("NIE correcto");
 
+			}else{
+				System.out.println("NIE incorrecto");
 
+			
+			}
+			}
+		
+		if(letrasnie.charAt(2)==letranie1.charAt(0)){
+			aux = letranie1.replace("Z", "2");
+			System.out.println("la letra de control de tu nie es la Z y tu numero  es " + aux );
+			System.out.println( " ahora dime te tu letra final");
+			
+			letranie2 =teclado.nextLine();
+			letranie2=letranie2.toUpperCase();
+			System.out.println( letranie2);
+			k=Integer.parseInt(aux)%23;
+			if(letras.charAt(k)==letranie2.charAt(0)){
+				System.out.println("NIE correcto");
 
+			}else{
+				System.out.println("NIE incorrecto");
 
-		System.out.println( " La frase tiene " + canta + " A's " + cante + " E's " + "    " + canti + " I`s"+  "   " +canto + " O's " + "    " + cantu + " U's");
+		}
 
-
-	}
-}
+		}
+		}
+			}
+		}
 
 
 

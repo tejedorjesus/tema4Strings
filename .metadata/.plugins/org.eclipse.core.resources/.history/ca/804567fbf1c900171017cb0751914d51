@@ -1,0 +1,71 @@
+
+package prueba;
+
+import java.util.Scanner;
+public class prueba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+
+
+		//ejercicio 7 programa que de una frase nos diga mayusculas minusculas y numeros que tiene*/
+
+
+		String letras ="TRWAGMYFPDXBNJZSQVHLCKE";
+		String letrasnie ="XYZ";
+		int dni=0;
+		int i=0;
+		String letra;
+		int n=0;
+		String nie;
+		int opcion=0;
+		int K=0;
+		String aux;	int k=0;
+
+		System.out.println( " dni pulse '1' nie pulse '2'");
+		opcion=teclado.nextInt();
+
+		if (opcion ==1){
+			System.out.println( "Introduce el dni sin letra");
+			dni=teclado.nextInt();
+			teclado.nextLine();
+
+			i=dni%23;
+			System.out.println(letras.charAt(i));
+
+			System.out.println( "Introduce la letra");
+
+
+			letra =teclado.nextLine();
+			System.out.println( letra);
+
+			if(letras.charAt(i)==letra.charAt(0)){
+				System.out.println("DNI correcto");
+
+			}else{
+				System.out.println("DNI incorrecto");
+
+			}
+		}
+
+		if (opcion==2){
+			
+			System.out.println( "Introduce la primera letra de su nie");
+
+		}
+
+
+
+
+
+
+
+	}
+}
+
+
+
+
+
+

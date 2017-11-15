@@ -3,6 +3,7 @@ public class prueba2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 
 		final int F = 10;
 		final int C = 10;
@@ -39,3 +40,41 @@ public class prueba2 {
 	}//main
 }
         
+=======
+		Scanner sc = new Scanner(System.in);
+		//Crear un array unidimensional de 20 elementos con nombres de personas. Visualizar los
+		//elementos de la lista debiendo ir cada uno en una fila distinta
+
+
+
+          String [] nombres = new String[3];
+          int i=0;
+          
+          int conta=0;
+   
+          System.out.println("introduce el primer nombre");
+     	 
+          for(i=0; i<nombres.length;i++){
+        	
+        	  nombres[i] = sc.next();
+        	  if(conta!=0){
+            	  System.out.println("introduce otro nombre");  
+        	  }
+        	  conta=conta+1;
+
+        	 
+              
+        	  
+        	  
+          
+          
+          }
+          System.out.println();
+          for(i=0; i<nombres.length;i++){
+        	  System.out.println (nombres[i]);
+        	  
+          }
+
+	}
+}
+>>>>>>> 2f1884a310763abb5e5c3a3786028bef93d368d6
