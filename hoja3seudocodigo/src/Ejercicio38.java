@@ -13,19 +13,27 @@ public class Ejercicio38 {
 		Scanner teclado = new Scanner(System.in);
 		int i=0; int j=0; 
 		int Array1[][];
-		Array1 = new int [f][c];
 		
-		int f=0;
-		int c =0;
 		
-		for(f=0; f<; f++){
-			for(c=0; c<; c++){
+		
+		
+		
+		int a=0;
+		int cur=0;
+		System.out.println("intoduce curso");
+		cur=teclado.nextInt();
+		System.out.println("intoduce alumno");
+		a=teclado.nextInt();
+		Array1 = new int [cur][a];
+		
+		for(i=0; i<cur; i++){
+			for(j=0; j<a; j++){
 				
-			Array1[f][c]=(int)Math.floor(Math.random()*11);
+			Array1[i][j]=(int)Math.floor(Math.random()*11);
 			
-			System.out.printf("%3d",Array1[f][c]);
+			System.out.printf("%3d",Array1[i][j]);
 			
 			}
 			System.out.println();
-		}
+		}}}
 		
