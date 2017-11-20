@@ -42,7 +42,7 @@ public class main {
 
 	
 					
-			}//end if
+			}//end for
 
 
 			

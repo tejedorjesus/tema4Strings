@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.concurrent.SynchronousQueue;
+public class prueba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//2. Dada una frase de no más de 80 caracteres hacer un programa que busque cuántas mayúsculas
+				//y minúsculas tiene y lo imprima//
+				Scanner teclado = new Scanner(System.in);
+				
+				
+				String frase;
+				int i=0;
+				int contador=0;		
+				System.out.println(" escribe una frase por teclado ");
+				frase=teclado.nextLine();
+				for(i=0;i<frase.length();i+=2){
+					contador++;	
+					System.out.println(frase.charAt(i));
+				}
+			
+				
+				
+			
+	
+	
+	
+}
+}

@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Ejercicio4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Escribe un programa que pida por teclado dos nombres con su apellido cada uno del
+		//siguiente modo:
+		//Introduce un nombre y un apellido:
+		//Manuel García
+		//Introduce otro nombre y apellido:
+		//Jimena Pérez
+		//Después debe intercambiar los apellidos a los nombres y mostrarlos:
+			//Jimena García
+			//Manuel Pérez
+
+		
+		 Scanner teclado = new Scanner(System.in);
+		 
+		 
+		 String nom1;
+		 String nom2;
+		 System.out.println(" Introduzca primer nombre y apellidos");
+		 nom1 = teclado.nextLine();
+		 System.out.println(" Introduzca segundo nombre y apellidos");
+		 nom2 = teclado.nextLine();
+		 
+		String[] parte1= nom1.split(" ");
+		String[] parte2= nom2.split(" ");
+		
+		 
+		 System.out.println(parte1[0] +" "+ parte2[1]);
+		 System.out.println(parte2[1] +" "+ parte1[0]);
+		 
+		 
+
+	}
+
+}

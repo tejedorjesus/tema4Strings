@@ -6,6 +6,8 @@ public class string3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//3. Leer un vector de 20 enteros. Encontrar el mayor y el menor de ellos y los lugares donde se
+	//	encuentran.
 
 		String frase;
 		String palabra;

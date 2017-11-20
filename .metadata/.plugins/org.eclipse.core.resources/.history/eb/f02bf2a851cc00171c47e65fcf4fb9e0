@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//1. Escribir un programa que pida por teclado una cadena y una letra, de manera que
+		//ponga en mayúsculas cada ocurrencia de la letra que haya en la cadena y lo
+		//muestre por pantalla.
+		 Scanner teclado = new Scanner(System.in);
+		String frase;
+		String letra;
+		int i=0;
+		int contador=0;
+		
+		System.out.println(" escribe un una frase ");
+		
+		frase=teclado.nextLine();
+		
+		System.out.println(" escribe un letra ");
+		
+		letra=teclado.nextLine();
+		
+		for(i=0;i<frase.length(); i++){
+		if(frase.contains(letra)){
+			contador++;
+		}
+			
+			
+		}
+		System.out.println(contador);
+		
+		
+		
+		
+
+	}
+
+}
