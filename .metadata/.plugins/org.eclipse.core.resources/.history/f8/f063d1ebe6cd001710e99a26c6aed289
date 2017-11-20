@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class pruebas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*7.-Hacer un programa que vaya leyendo números por el teclado hasta que lea el cero
+		que indicará fin de entrada de datos, el programa debe calcular y escribir la suma de los
+		introducidos en lugar par y los introducidos en lugar impar, es decir los introducidos
+		primero, tercero, quinto … etc. y la suma de los introducidos el segundo, cuarto, sexto
+		... etc.
+		*/
+		Scanner teclado = new Scanner(System.in);	
+		
+		int n =0;
+		int sumapar=0;
+		int sumaimpar=0;
+		
+		
+		System.out.println("introduzca un numero ");
+		n =teclado.nextInt();
+	
+		while(n==0);{
+			
+			
+			System.out.println("introduzca otro numero ");
+			
+		
+			
+	
+		
+		}
+
+	}
+
+}

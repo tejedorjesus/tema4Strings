@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class pruebas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*8.-Dados dos números p y q que leeremos por teclado y que deben ser positivos, hacer
+		un programa que nos diga cual de los dos tiene más divisores, con un mensaje que diga
+		“p tiene mas divisores que q” ó viceversa.
+		*/
+
+		Scanner teclado = new Scanner(System.in);	
+		
+		int n =0;
+		int p =0;
+		int contadivp=0;
+		int contadivq=0;
+		
+		
+		System.out.println("introduzca el primer numero ");
+		n =teclado.nextInt();
+	
+		while(n>0){
+			
+			
+			System.out.println("introduzca otro numero mayor que 0 ");
+			n =teclado.nextInt();
+		
+		}
+		System.out.println("introduzca el primer numero ");
+		n =teclado.nextInt();
+	
+		while(p>0){
+			
+			
+			System.out.println("introduzca otro numero mayor que 0 ");
+			p =teclado.nextInt();
+		
+		}
+	
+
+	}
+
+}
