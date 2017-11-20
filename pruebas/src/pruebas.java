@@ -3,60 +3,54 @@ public class pruebas {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*8.-Dados dos números p y q que leeremos por teclado y que deben ser positivos, hacer
-		un programa que nos diga cual de los dos tiene más divisores, con un mensaje que diga
-		“p tiene mas divisores que q” ó viceversa.
-		*/
+		//41.-Se dispone de una tabla de 5 páginas, 10 filas y 20 columnas, que se refieren al centro, al
+		//curso y al número de alumnos de un colegio respectivamente. Imprimir la nota media por curso
+		//y la nota media máxima y su centro de pertenencia
 
 		Scanner teclado = new Scanner(System.in);	
-		
-		int p =0;
-		int q =0;
-		int contadivp=0;
-		int contadivq=0;
-		int div=0;
-		
-		
-		System.out.println("introduzca el primer numero ");
-		p =teclado.nextInt();
-	
-		while(p<0){
-			
-			
-			System.out.println("introduzca otro numero mayor que 0 ");
-			p =teclado.nextInt();
-		
+
+
+		int tabla [][][]=new int [5][10][20];
+		int centro;
+		int curso;
+		int alumno;
+		int suma=0;
+		int media=0;
+		int mediamax=0;
+
+		for(centro=0; centro<5; centro++){
+			System.out.println();
+			System.out.println("-----------------------------------------------");
+
+			for(curso=0;curso<10; curso ++){
+				System.out.println();
+				for(alumno=0; alumno<20; alumno++){
+
+
+					tabla[centro][curso][alumno]=(int)Math.floor(Math.random()*11);
+					System.out.printf("%3d",tabla[centro][curso][alumno]);
+
+				}
+
+			}
+
 		}
-		System.out.println("introduzca el segundo numero ");
-		q=teclado.nextInt();
-	
-		while(q<0){
-			
-			
-			System.out.println("introduzca otro numero mayor que 0 ");
-			q =teclado.nextInt();
-		
-		}
-		
-		for (div=1; div<p-1; div++){
-			if (p%div==0){
-				contadivp++;
+		System.out.println();
+		System.out.println("-----------------------------------------------");
+		System.out.println("-----------------------------------------------");
+
+		for(centro=0; centro<5; centro++){
+			for(curso=0;curso<10; curso ++){
+				for(alumno=0; alumno<20; alumno++){
+					suma= suma+ tabla[centro][curso][alumno];
+					media= (suma/20);
+					if (mediamax<media);
+					mediamax=media;
+
+
+				}
 			}
 		}
-		for (div=1; div<q-1; div++){
-			if (q%div==0){
-				contadivq++;
-			}
-		}
-		if ( contadivp<contadivq){
-		System.out.println(  q + "tiene mas divisores que  " +p);
-		}
-		if( contadivp==contadivq){
-			System.out.println("tienen los mismos divisores");
-		}else{
-			System.out.println(p + "tiene mas divisores que  " +q);
-		
-	}
 	}
 
 }
