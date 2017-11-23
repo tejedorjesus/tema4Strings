@@ -9,37 +9,21 @@ public class pruebas {
 		Scanner teclado = new Scanner(System.in);	
 		
 		int n=0;
-		int pp=0;
-		int div=0;
-		int contadiv=0;
+		int k =0;
 		
 		
 		System.out.println("intorduzca un numero");
 		
 		n=teclado.nextInt();
-		for( pp = 2;pp<n; pp++){
-			
-			contadiv=0;
-			
-			for(div=2; div< pp; div++){
-				if (pp%div==0){
-					contadiv++;
-				}
-				
-			}
-			if (contadiv==0){
-				System.out.println(pp);
+		
+		
+		for (k=1; k<n; n++){
+			if(n%k==0){
+				System.out.println( k );
 			}
 		}
-				
-				
-					
 		
-		
-			
-		
-		
-
+	
 		
 		
 		

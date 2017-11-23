@@ -17,11 +17,11 @@ public class pruebas {
 		System.out.println("intorduzca un numero");
 		
 		n=teclado.nextInt();
-		for( pp = 2;pp<n; pp++){
+		for( pp = 1;pp<n; pp++){
 			
 			contadiv=0;
 			
-			for(div=2; div< pp; div++){
+			for(div=1; div< pp; div++){
 				if (pp%div==0){
 					contadiv++;
 				}
