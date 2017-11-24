@@ -14,22 +14,15 @@ public class Ejercicio10 {
 		n=teclado.nextInt();
 		
 		
-		for (k=2; k<n;k++){
-			if (n%k==0){
-				conta++;
-				if(conta==0){
-					
-				}
+		for (k=0; k<n;k++){
+			if ((n-k)%k==0){
+				conta ++;
+				
+				System.out.println(k);
 			}
 		}
 		
-		System.out.println(k);
-		
-		
-		
-		
-		
-		
+
 		
 	}
 

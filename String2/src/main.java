@@ -27,10 +27,10 @@ public class main {
 		
 		}
 		for(i=0; i< s1.length(); i++){
-			if(s1.charAt(i)>65 && s1.charAt(i)<90){
+			if(s1.charAt(i)>=65 && s1.charAt(i)<=90){
 				contamayus++;
 			}//end if
-			if(s1.charAt(i)>98 && s1.charAt(i)<122){
+			if(s1.charAt(i)>=97 && s1.charAt(i)<=122){
 				contaminus++;
 			}
 			
