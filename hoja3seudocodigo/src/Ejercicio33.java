@@ -19,19 +19,20 @@ public class Ejercicio33 {
           for(i=0; i<nombres.length;i++){
         	
         	  nombres[i] = sc.next();
-        	  if(conta!=0){
+        	
             	  System.out.println("introduce otro nombre");  
         	  }
-        	  conta=conta+1;
+        	
 
-        	 
+	
               
         	  
         	  
           
           
-          }
-          System.out.println();
+          
+
+          
           for(i=0; i<nombres.length;i++){
         	  System.out.println (nombres[i]);
         	  

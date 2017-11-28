@@ -10,9 +10,10 @@ public class string5 {
 		String frase;
 
 		int k;
-
+       int i;
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("escriba una frase");   
+	
 		frase=teclado.nextLine();
 
 
@@ -21,9 +22,9 @@ public class string5 {
 				System.out.print( frase.charAt(k));
 				
 		}System.out.println();
-		for(k=1;k<frase.length();k+=2){
+		for(i=1;i<frase.length();i+=2){
 			
-			System.out.print( frase.charAt(k));
+			System.out.print( frase.charAt(i));
 		}
 	
 			

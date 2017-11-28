@@ -1,35 +1,33 @@
 import java.util.Scanner;
 
+import org.omg.Messaging.SyncScopeHelper;
+
 public class main {
 
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 
 		// TODO Auto-generated method stub
-		//2. Dada una frase de no más de 80 caracteres hacer un programa que busque cuántas
-		//mayúsculas y minúsculas tiene y lo imprima
+		//Crear un array unidimensional de 20 elementos con nombres de personas. Visualizar los
+		//elementos de la lista debiendo ir cada uno en una fila distinta
+
+
+		String [] nombres = new String [3];
 		
+		int i=0;
+		System.out.println("intro el  nombre");
 		
-		String frase;
-		frase=teclado.nextLine();
-		int k=0;
-		int contamayus=0;
-		int contaminus=0;
-		
-		for(k=0;k<frase.length(); k++){
-			
-			if(frase.charAt(k)>64 && frase.charAt(k)<91){
-				contamayus++;
-			}//end if
-			if(frase.charAt(k)>96 && frase.charAt(k)<123){
-				contaminus++;
-			
-			}//end if
-			
-			
-			
-		}
-		System.out.println("la frase tiene " + contaminus + "minusculas " + contamayus + " mayusculas " );
-	}
 	
+		
+		for(i=0; i<nombres.length; i++){
+			nombres[i] = teclado.nextLine();
+			System.out.println("intro el  nombre");
+		
+		
+		
+		}
+		for(i=0; i<nombres.length; i++){
+		System.out.println( nombres[i]);
+		}
+	}
 }

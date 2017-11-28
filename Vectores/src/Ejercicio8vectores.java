@@ -15,54 +15,60 @@ public class Ejercicio8vectores {
 		Scanner teclado = new Scanner(System.in);	
 
 		
-		
-		int Array1 [][];
-		Array1 = new int[10][10];
-		int i=0 , j=0;
-		int contalum;
-		int contasig=0;
-		int n=0;
-		int a=0;
-		
-		for (i=0; i<10; i++){
-			for (j=0; j<10; j++){
-			
-				Array1[i][j]=(int)Math.floor(Math.random()*11);
-				
-				System.out.printf("%3d", Array1[i][j]);
-			}
-			
+		int vector1[][]= new int [5][5];
+		int sumasignaturas=0;
+		int sumalumnos=0;
+		int nalumno=0;
+		int nasignatura;
+
+
+		int asignaturas=0;
+		int alumnos=0;
+		System.out.println("-------------------------suma filas");
+
+
+
+		for ( asignaturas = 0; asignaturas <5; asignaturas++) {
 			System.out.println();
-		}
-		System.out.println("introduzca el numero del alumno");
-		n=teclado.nextInt();
-		contalum=0;
-		for (i=0; i<1; i++){
-		
-			for (j=0; j<10; j++){
+			for (alumnos = 0; alumnos <5; alumnos++) {
+				vector1[asignaturas][alumnos]=(int)(Math.random()*11);
+				System.out.printf("%3d", vector1[asignaturas][alumnos]);
+				
 			
-				
-				contalum= contalum + Array1[n-1][j];
-				
-				
 			}
-			
-			
 		}
-		System.out.println((float)contalum/10);
-		
-		System.out.println("introduzca el numero de la asignatura");
-		a=teclado.nextInt();
-		contasig=0;
-		for (i=0; i<10; i++){
-		
-			for (j=0; j<1; j++){
+	System.out.println();
+				System.out.println(" vamos a ver que notitas han sacado ");
+				System.out.println( " pulse el numero de la asignatura ");
+				nasignatura=teclado.nextInt();
+				
+				
+				sumasignaturas=0;
+					for (asignaturas = 0; asignaturas<1; asignaturas++) {
+						System.out.println();
+						for ( alumnos = 0; alumnos <5; alumnos++) {
+						sumasignaturas= sumasignaturas+ vector1[nasignatura-1][alumnos];
+							
+					}
+						
+				}
+	
+			System.out.println( " la media de las asignaturas es "+ (float)sumasignaturas/5);	
 			
+			System.out.println( " pulse el numero de la alumno ");
+			nalumno=teclado.nextInt();
+			sumalumnos=0;
+			for (alumnos = 0; alumnos<1; alumnos++) {
+				System.out.println();
+				for ( asignaturas = 0; asignaturas <5; asignaturas++) {
+				sumalumnos= sumalumnos+ vector1[asignaturas][nalumno-1];
+					
+			}
 				
-				contasig= contasig + Array1[i][a-1];
-				
-}
 		}
-		System.out.println((float)contasig/10);
+			System.out.println( " la media del alumno es  "+ (float)sumalumnos/5);	
+
 	}
+	
 }
+		

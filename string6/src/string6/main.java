@@ -1,4 +1,4 @@
-package string6;
+0package string6;
 
 import java.util.Scanner;
 
@@ -40,10 +40,8 @@ public class main {
 					cantidadletras ++;
 			}// end if
 
-	
-					
-			}//end for
-
+		
+			}//end for.
 
 			
 		

@@ -5,7 +5,8 @@ public class ejercicio3vectores {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 Scanner sc = new Scanner(System.in);
-		
+		 //Leer un vector de 20 enteros. Encontrar el mayor y el menor de ellos y los lugares donde se
+		 //encuentran.
 		
 		
 		
@@ -44,8 +45,8 @@ public class ejercicio3vectores {
 			
 		 }//end for
 		 System.out.println();
-		 System.out.println( "el maximo es " + maximo +  " la posiscion maxima es " + posimax  );
-		 System.out.println(  "  el minimo es " + minimo +  " la posicion minima es " + posimin );
+		 System.out.println( "el maximo es " + maximo +  " la posiscion maxima es " + (posimax +1) );
+		 System.out.println(  "  el minimo es " + minimo +  " la posicion minima es " + (posimin +1) );
 	
 	}
 

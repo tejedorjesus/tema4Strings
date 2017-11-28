@@ -11,20 +11,20 @@ public class Ejercicio6vectores {
 	//matriz.
 	
 	
-	int suma=0;
-			int sumac=0;
+	int sumafilas=0;
+	int sumacolumnas=0;
 	
 	int Array1[][];
 	Array1=new int [10][10];
 	int Array2[];
-	Array2=new int [10];
-	int i=0;
-	int j=0;
+
+	int filas=0;
+	int columnas=0;
 	
-	for(i=0; i<10; i++){
-		for(j=0; j<10; j++){
-		Array1[i][j]=(int)Math.floor(Math.random()*11-5);
-		System.out.printf("%3d", Array1[i][j]);
+	for(filas=0; filas<10; filas++){
+		for(columnas=0; columnas<10; columnas++){
+		Array1[filas][columnas]=(int)Math.floor(Math.random()*11-5);
+		System.out.printf("%3d", Array1[filas][columnas]);
 		
 	
 		}
@@ -36,23 +36,24 @@ public class Ejercicio6vectores {
 	
 	System.out.println( "\t\t\t\t\t\t suma filas");
 	
-	for(i=0; i<10; i++){
-		for(j=0; j<10; j++){
-		suma += Array1[i][j];
-		System.out.printf("%3d", Array1[i][j]);
+	for(filas=0; filas<10; filas++){
+		for(columnas=0; columnas<10; columnas++){
+		sumafilas += Array1[filas][columnas];
+		System.out.printf("%3d", Array1[filas][columnas]);
 	
 	
 	}
-		System.out.print( "   " +suma);
+		System.out.print( "   " +sumafilas);
 		System.out.println();
 	}
-	for(i=0; i<10; i++){
-		for(j=0; j<10; j++){
-		sumac += Array1[j][i];
+	for(filas=0; filas<10; filas++){
+		for(columnas=0; columnas<10; columnas++){
+		sumacolumnas += Array1[columnas][filas];
 
 		}
-		System.out.printf("%3d", sumac);
+		System.out.printf("%3d", sumacolumnas);
 	}
 		
 	}
 }
+
