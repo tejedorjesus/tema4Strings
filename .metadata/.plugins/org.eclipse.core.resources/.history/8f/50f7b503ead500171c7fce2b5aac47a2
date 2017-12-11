@@ -1,0 +1,42 @@
+import java.util.*;
+public class poker {
+
+
+		// TODO Auto-generated method stub
+
+		
+		public static void main(String[] args) {
+			String[] carta = { "2♥", "3♥", "4♥", "5♥", "6♥", "7♥", "8♥", "9♥", "10♥", "J♥", "Q♥", "K♥", "A♥", "2♦", "3♦",
+					"4♦", "5♦", "6♦", "7♦", "8♦", "9♦", "10♦", "J♦", "Q♦", "K♦", "A♦", "2♣", "3♣", "4♣", "5♣", "6♣", "7♣",
+					"8♣", "9♣", "10♣", "J♣", "Q♣", "K♣", "A♣", "2♠", "3♠", "4♠", "5♠", "6♠", "7♠", "8♠", "9♠", "10♠", "J♠",
+					"Q♠", "K♠", "A♠" };
+		
+			Scanner sc = new Scanner(System.in);
+			int i, n;
+			
+			
+			System.out.println("baraja ordenada");
+			System.out.println();
+			
+			for(i=0; i<carta.length; i++){
+				System.out.printf("%3s",carta[i]);
+				
+				
+			}
+
+			
+			Random r = new Random();
+				for (i = carta.length; i > 0; i--) {
+					int posicion = r.nextInt(i);
+					String tmp = carta[i - 1];
+					carta[i - 1] = carta[posicion];
+					carta[posicion] = tmp;
+					System.out.printf("%3s",carta[i]);
+				
+				
+				
+			}
+			
+			
+		}
+}
